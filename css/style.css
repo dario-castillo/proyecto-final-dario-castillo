@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('../recursos/fonts/OpenSans-VariableFont_wdth.ttf');
+}
+
+@import url("https://use.typekit.net/iud1kav.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    text-transform: uppercase;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 60px;
+    background-color: rgb(7, 135, 135);
+    align-items: center;
+}
+
+.nav ul li{
+    background-color: rgb(10, 203, 203);
+    padding: 10px 0px;
+}
+
+.nav a{
+    font-family: ballinger, sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    height: 20px;
+    width: 170px;
+    text-align: center;
+    display: inline-block;
+}
+
+#main-acerca .titulo{
+    font-family:"Open Sans";
+    font-size: large;
+    text-align: center;
+    background-color: lightgray;
+    width: 180px;
+    height: 30px;
+    margin: 5px 5px 10px 5px;
+}
+#main-acerca .subtitulo{
+    font-family:"Open Sans";
+    font-size: large;
+    text-align: center;
+    background-color: lightgray;
+    width: 180px;
+    height: 30px;
+    margin: 30px 5px 10px 5px;
+}
+
+#main-acerca .primero{
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 5px 10px 5px;
+}
+
+#main-acerca .segundo{
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;    
+    margin: 10px 5px 10px 5px;
+}
+
+.footer{
+    display: flex;
+    height: 200px;
+    background-color: black;
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-index .titulo{
+    display: flex;
+    font-family:"Open Sans";
+    font-size: xx-large;
+    color: rgb(7, 135, 135);
+    justify-content: center;
+    background-color: lightgray;
+    height: 60px;
+}
+
+#main-index div img{
+    width: 1080px;
+}
+
+#main-acerca section img{
+    width: 450px;
+}
+
+#main-portfolio div .titulo{
+    font-family:"Open Sans";
+    font-size: large;
+    text-align: center;
+    background-color: lightgray;
+    width: 250px;
+    height: 30px;
+    margin: 5px 5px 10px 5px;
+}
+
+#main-portfolio div .primero{
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 5px 10px 5px;
+}
+
+
+#main-portfolio div img{
+    height: 400px;
+}
+
+#main-tienda div .titulo{
+    font-family:"Open Sans";
+    font-size: large;
+    text-align: center;
+    background-color: lightgray;
+    width: 250px;
+    height: 30px;
+    margin: 5px 5px 10px 5px;
+}
+
+#main-tienda div .primero{
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10px 5px 10px 5px;
+}
+
+#main-tienda div img{
+    height: 400px;
+}
+
+#main-contacto section{
+    margin: 70px 5px 140px 5px;
+}
+
+#main-contacto .titulo{
+    font-family:"Open Sans";
+    font-size: large;
+    text-align: center;
+    background-color: lightgray;
+    width: 250px;
+    height: 30px;
+    margin: 30px 5px 10px 5px;
+}
+#main-contacto .subtitulo{
+    font-family:"Open Sans";
+    font-size: large;
+    margin: 30px 5px 10px 5px;
+
+}
+
+#main-contacto .subtitulo-2{
+    font-family:"Open Sans";
+    font-size: large;
+    margin: 30px 5px 10px 5px;
+}
+
+#main-contacto p{
+    font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    margin: 10px 5px 10px 5px;
+}
