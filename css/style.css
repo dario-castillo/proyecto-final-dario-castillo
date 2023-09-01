@@ -38,6 +38,11 @@
     display: inline-block;
 }
 
+.text-white:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+
 #main-acerca .titulo{
     font-family:"Open Sans";
     font-size: large;
