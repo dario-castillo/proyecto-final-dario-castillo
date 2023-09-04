@@ -42,7 +42,6 @@
     background-color: rgb(65, 65, 65);
 }
 
-
 #main-acerca .titulo{
     font-family:"Open Sans";
     font-size: large;
@@ -96,10 +95,6 @@
     justify-content: center;
     background-color: lightgray;
     height: 60px;
-}
-
-#main-index div img{
-    width: 1080px;
 }
 
 #main-acerca section img{
