@@ -6,11 +6,11 @@
 @import url("https://use.typekit.net/iud1kav.css");
 
 
-.nav{
+.nav {
     text-transform: uppercase;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -20,12 +20,12 @@
     align-items: center;
 }
 
-.nav ul li{
+.nav ul li {
     background-color: rgb(10, 203, 203);
     padding: 10px 0px;
 }
 
-.nav a{
+.nav a {
     font-family: ballinger, sans-serif;
     font-weight: 400;
     font-size: large;
@@ -38,58 +38,120 @@
     display: inline-block;
 }
 
-.text-white:hover{
+.text-white:hover {
     background-color: rgb(65, 65, 65);
 }
 
-#main-acerca .titulo{
-    font-family:"Open Sans";
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "parrafo imagen-1"
+      "parrafo-2 parrafo-2"
+      "imagen-2 imagen-2";
+  }
+  
+  .parrafo { grid-area: parrafo; }
+  
+  .imagen-1 { grid-area: imagen-1; }
+  
+  .parrafo-2 { grid-area: parrafo-2; }
+  
+  .imagen-2 { grid-area: imagen-2; }
+  
+
+#main-acerca{
+    display: grid;
+}
+
+#main-acerca .imagen-1 {
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-acerca .vision{
+    height: 500px;
+}
+
+#main-acerca .imagen-2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#main-acerca .daredevil{
+    height: 480px;
+}
+
+#main-acerca .parrafo {
+    height: 500px;
+    padding: 0 10px;
+}
+
+#main-acerca .parrafo-2 {
+    padding: 15px;
+}
+
+#main-acerca .titulo {
+    display: grid;
+    font-family: "Open Sans";
     font-size: large;
     text-align: center;
+    align-items: center;
     background-color: lightgray;
     width: 180px;
     height: 30px;
     margin: 5px 5px 10px 5px;
 }
-#main-acerca .subtitulo{
-    font-family:"Open Sans";
+
+#main-acerca .subtitulo {
+    display: grid;
+    font-family: "Open Sans";
     font-size: large;
     text-align: center;
+    align-items: center;
     background-color: lightgray;
     width: 180px;
     height: 30px;
-    margin: 30px 5px 10px 5px;
 }
 
-#main-acerca .primero{
+#main-acerca .primero {
     font-family: ballinger, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 5px;
+}
+
+#main-acerca .segundo {
+    font-family: ballinger, sans-serif;
+    font-size: larger;
     font-weight: 300;
     font-style: normal;
     margin: 10px 5px 10px 5px;
 }
 
-#main-acerca .segundo{
-    font-family: ballinger, sans-serif;
-    font-weight: 300;
-    font-style: normal;    
-    margin: 10px 5px 10px 5px;
-}
-
-.footer{
-    display: flex;
+.footer {
+    display: grid;
     height: 200px;
     background-color: black;
     font-family: ballinger, sans-serif;
     font-weight: 300;
-    font-style: normal; 
+    font-style: normal;
     color: white;
     align-items: center;
     justify-content: center;
+    align-content: center;
+    justify-items: center;
 }
 
-#main-index .titulo{
+#main-index .titulo {
     display: flex;
-    font-family:"Open Sans";
+    font-family: "Open Sans";
     font-size: xx-large;
     color: rgb(7, 135, 135);
     justify-content: center;
@@ -97,12 +159,8 @@
     height: 60px;
 }
 
-#main-acerca section img{
-    width: 450px;
-}
-
-#main-portfolio div .titulo{
-    font-family:"Open Sans";
+#main-portfolio div .titulo {
+    font-family: "Open Sans";
     font-size: large;
     text-align: center;
     background-color: lightgray;
@@ -111,7 +169,7 @@
     margin: 5px 5px 10px 5px;
 }
 
-#main-portfolio div .primero{
+#main-portfolio div .primero {
     font-family: ballinger, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -119,12 +177,12 @@
 }
 
 
-#main-portfolio div img{
+#main-portfolio div img {
     height: 400px;
 }
 
-#main-tienda div .titulo{
-    font-family:"Open Sans";
+#main-tienda div .titulo {
+    font-family: "Open Sans";
     font-size: large;
     text-align: center;
     background-color: lightgray;
@@ -133,23 +191,23 @@
     margin: 5px 5px 10px 5px;
 }
 
-#main-tienda div .primero{
+#main-tienda div .primero {
     font-family: ballinger, sans-serif;
     font-weight: 300;
     font-style: normal;
     margin: 10px 5px 10px 5px;
 }
 
-#main-tienda div img{
+#main-tienda div img {
     height: 400px;
 }
 
-#main-contacto section{
+#main-contacto section {
     margin: 70px 5px 140px 5px;
 }
 
-#main-contacto .titulo{
-    font-family:"Open Sans";
+#main-contacto .titulo {
+    font-family: "Open Sans";
     font-size: large;
     text-align: center;
     background-color: lightgray;
@@ -157,22 +215,60 @@
     height: 30px;
     margin: 30px 5px 10px 5px;
 }
-#main-contacto .subtitulo{
-    font-family:"Open Sans";
+
+#main-contacto .subtitulo {
+    font-family: "Open Sans";
     font-size: large;
     margin: 30px 5px 10px 5px;
 
 }
 
-#main-contacto .subtitulo-2{
-    font-family:"Open Sans";
+#main-contacto .subtitulo-2 {
+    font-family: "Open Sans";
     font-size: large;
     margin: 30px 5px 10px 5px;
 }
 
-#main-contacto p{
+#main-contacto p {
     font-family: ballinger, sans-serif;
     font-weight: 300;
-    font-style: normal; 
+    font-style: normal;
     margin: 10px 5px 10px 5px;
 }
+
+
+@media(max-width: 992px){
+    #main-acerca{
+        width: 300px;
+    }
+    #main-acerca .container{
+        width: 300px;
+    }
+    #main-acerca .parrafo{
+        width: 300px;
+        height: 250px;
+    }
+    #main-acerca .primero{
+        font-size: small; 
+    }
+    #main-acerca .segundo{
+        font-size: smaller;
+    }
+    #main-acerca .imagen-1{
+        display: none;
+    }
+    #main-acerca .parrafo-2{
+        width: 300px;
+    }
+    #main-acerca .imagen-2{
+        width: 300px;
+        height: 250px;
+    }
+    #main-acerca .daredevil{
+        height: 150px;
+    }
+    .footer p{
+        font-size: smaller;
+    }
+    }
+
